@@ -1,0 +1,257 @@
+%pakages
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\geometry{
+    top=1in,
+    bottom=1in,
+    left=1in,
+    right=1in
+}
+\pagestyle{fancy}
+\fancyhf{}
+
+\lhead{Project Progress Log}
+\rhead{2026}
+\cfoot{\thepage}
+
+%Introduction
+
+\begin{document}
+\begin{titlepage}
+    \centering
+
+    \vspace*{2cm}
+
+    {\Huge \textbf{PROJECT PROGRESS LOG}}\\[1cm]
+
+    {\LARGE \textbf{THERMOMETER}}\\[1.5cm]
+
+    \textbf{Team Members}\\[0.5cm]
+
+    {\large
+    G.N.S.S.Rithvik\\
+    R.Srikar Varshit
+    }\\[1.5cm]
+
+    \textbf{Roll Numbers} \\[0.5cm]
+    
+    {\large
+    EE26BTECH11211\\
+    EE26BTECH11223
+    }\\[1.5cm]
+   
+    \vfill
+
+    {\large \today}
+
+\end{titlepage}
+
+% start of the progress log
+
+\section{Building circuit on Breadboard}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{WhatsApp Image 2026-10-16 at 2.03.03 AM (1).jpeg}
+    \caption{LCD on breadboard}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone (Figure: 1)}
+\textbf{We first tested the apparatus we received from the lab. We wanted to test the whole setup on a breadboard first. Then we placed the LCD on the breadboard as shown in Figure 1}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{WhatsApp Image 2026-10-16 at 2.03.03 AM.jpeg}
+    \caption{Potentiometer on breadboard}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone (Figure: 2)}
+\textbf{Then we attached the potentiometer on the breadboard, besides the LCD display, as shown in Figure 2}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{WhatsApp Image 2026-10-16 at 2.03.02 AM (3).jpeg}
+    \caption{Wiring the breadboard and the ardiuno with jumper wires}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone (Figure: 3)}
+\textbf{After placing the LCD and the potentiometer on the breadboard, we made connections using jumper wires. We refer to pt100 repository for the connections to be made between the Ardiuno, LCD and Potentiometer. As shown in Figure 3 we made the connections between the apparatus and connected Pt100 to the circuit.}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle =90,width=0.65\linewidth]{WhatsApp Image 2026-10-16 at 2.03.02 AM (2).jpeg}
+    \caption{Readings of the thermometer at room temperature}
+    \label{fig:placeholder}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle =90,width=0.65\linewidth]{WhatsApp Image 2026-10-16 at 2.03.02 AM (1).jpeg}
+    \caption{Readings of the lab thermometer at room temperature}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Observation (Figure: 4,5)}
+\textbf{After the whole connection was completed on the breadboard, we gave power to the Ardiuno. The LCD started to glow. We then enter the code into the Arduino. Then we observed the values as seen in Figuure 4. It indicated room temperature. We measured  room temperature with an industrial thermometer and the thermometer we made .We observed about $27.6\degree\text{C}$. The actual room temperature was $31\degree\text{C}$.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90, width=0.65\linewidth]{WhatsApp Image 2026-10-16 at 2.03.02 AM.jpeg}
+    \caption{Reading of our thermometer in hot water}
+    \label{fig:placeholder}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+     \includegraphics[width=0.65\linewidth]{WhatsApp Image 2026-10-16 at 2.03.01 AM (2).jpeg}
+    \caption{Reading of lab thermometer in hot water}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Observation (Figure: 6,7)}
+\textbf{We observe the readings of both thermometers in hot water. We got $45.2\degree\text{C}$ as our temperature reading and $52.8\degree\text{C}$ as the lab thermometer reading.Then we realized that there is a slight error in obtaining the temperature reading we obtained  from our temperature. We observed this in both the room temperature reading and the hot water temperature reading.}
+
+\section{Building the circuit on the Perfboard}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{WhatsApp Image 2026-10-16 at 2.03.01 AM.jpeg}
+    \caption{Arrangemet of LCD and wires on the Perfboard}
+    \label{fig:placeholder}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{WhatsApp Image 2026-10-16 at 2.03.01 AM (1).jpeg}
+    \caption{Other side of the Perfboard}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone(Figure: 8,9)}
+\textbf{We connected the LCD to the perfboard and soldered it firmly to the perfboard. Then we connected the wires and soldered them firmly as well, As shown in figure 8 and Figure 9}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{WhatsApp Image 2026-10-16 at 2.03.00 AM.jpeg}
+    \caption{The perfboard after all the connections are made as we done on the breadboard}
+    \label{fig:placeholder}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{WhatsApp Image 2026-10-16 at 2.02.59 AM.jpeg}
+    \caption{The other side of the perfboard after all the connections are made and soldered firmly.}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone(Figure: 10,11)}
+\textbf{We made connections on the perfboard as we did on the breadboard. Then we soldered the wires and the resistors on the perfboard.. We did not solder the wires directly to the LCD. we just left them touching to the LCD, As we can see in Figure 11. }
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{WhatsApp Image 2026-10-16 at 2.02.59 AM (2).jpeg}
+    \caption{Connecting to the Ardiuno and giving power}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Observation (Figure: 12)}
+\textbf{After connecting the whole circuit to the Ardiuno, we gave power to the whole thing. We observed that after giving power the LCD started to glow, but did not print or show anything.}
+
+\subsection{Problem (Figure: 12)}
+\textbf{We faced a problem with the LCD. It did not display anything. It just glows.}
+\subsection{What we did}
+\textbf{We thought that there were some loose connections, as we did not solder the wires to the LCD. We then gently re-soldered the LCD on the perfboard and removed it from the perfboard.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{WhatsApp Image 2026-10-16 at 2.02.59 AM (1).jpeg}
+    \caption{Adding header pins to the perfboard}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone(Figure: 13)}
+\textbf{After gently re-soldering the LCD, we added the header ins to the perfboard. Then we solder it to the perfboard. Then we soldered the header pins to the wires that were left touching the LCD.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{WhatsApp Image 2026-10-16 at 2.02.58 AM (1).jpeg}
+    \caption{After adding header pins, reconnecting the circuit}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone (Figure: 14)}
+\textbf{We then attached the LCD to the perfboard with the help of soldered header pins on the perfboard.After attaching the LCD to the perfboard we made connections to the ardiuno and suppliying it power.}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90,width=0.45\linewidth]{WhatsApp Image 2026-10-16 at 2.02.58 AM.jpeg}
+    \caption{Testing of LCD}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Observation (Figure: 15)}
+\textbf{After supplying power to the ardiuno, we checked if the LCD display was working properly or not. It was confirmed that it is working as it displayed what we wanted to print. Hence LCD was working.after verifying the working of LCD, we changed the code to measure the temperature.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle =90,width=0.85\linewidth]{WhatsApp Image 2026-10-16 at 2.02.57 AM.jpeg}
+    \caption{Readings of both thermometers at room temperature}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Observation (Figure: 16)}
+\textbf{At room temperature we measured the temperature with both the temperatures. The lab thermometer shows about $32.1\degree\text{C}$ and our temperature was showing about $31.8\degree\text{C}$. As there was error in our room temperature measurement, we measured the temperature of hot water in a kettle. }
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle =90,width=0.85\linewidth]{WhatsApp Image 2026-10-16 at 2.02.57 AM (1).jpeg}
+    \caption{Readings of both thermometers of hot water}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Observation (Figure: 17)}
+\textbf{After taking the readings of room temperature with both thermometers. We took readings oh hot water in a kettle of both thermometers. The lab thermometer shows $66.4\degree\text{C}$ where as our thermometer shows $58.3\degree\text{C}$. We observed}
+
+\subsection{Conclusion}
+\textbf{We concluded that our thermometer has an error in measuring the temperature. It is not as acurate as the lab thermometer.We modified our code.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle =90,width=0.75\linewidth]{WhatsApp Image 2026-10-16 at 2.02.57 AM (1).jpeg}
+    \includegraphics[angle= 90,width=0.75\linewidth]{WhatsApp Image 2026-10-16 at 2.02.57 AM.jpeg}
+    \caption{Verified values required for calibration}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone (Figure: 18)}
+\textbf{We compared the values of voltage and temperature needed for calibration and modified the code of the ardiuno.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{pt100_accuracy_graph_example.png}
+    \caption{Accuracy graph}
+    \label{fig:placeholder}
+\end{figure}
+
+ $$T = aX^2 + b^2 + c$$
+ \textbf{We used this equation for calibrating. We used the values of V from the Figure 18. }
+
+
+
+
+
+\end{document}
