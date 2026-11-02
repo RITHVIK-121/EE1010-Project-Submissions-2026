@@ -1,0 +1,128 @@
+
+%pakages
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\geometry{
+    top=1in,
+    bottom=1in,
+    left=1in,
+    right=1in
+}
+\pagestyle{fancy}
+\fancyhf{}
+
+\lhead{Project Progress Log}
+\rhead{2026}
+\cfoot{\thepage}
+
+%Introduction
+
+\begin{document}
+\begin{titlepage}
+    \centering
+
+    \vspace*{2cm}
+
+    {\Huge \textbf{PROJECT PROGRESS LOG}}\\[1cm]
+
+    {\LARGE \textbf{UGV-1}}\\[1.5cm]
+
+     \textbf{Team Members}\\[0.5cm]
+
+    {\large
+    G.N.S.S.Rithvik\\
+    R.Srikar Varshit
+    }\\[1.5cm]
+
+    \textbf{Roll Numbers} \\[0.5cm]
+    
+    {\large
+    EE26BTECH11211\\
+    EE26BTECH11223
+    }\\[1.5cm]
+   
+    \vfill
+
+    {\large \today}
+
+\end{titlepage}
+
+\section{Assembling:}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\linewidth]{WhatsApp Image 2026-11-02 at 6.42.22 PM.jpeg}
+    \includegraphics[width=0.75\linewidth]{WhatsApp Image 2026-11-02 at 6.42.21 PM (1).jpeg}
+    \caption{Initial connection}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone:}
+\textbf{Initially we connected the arduino to the Motor Driver on the breadboard. Then we took some jumpers and we connected the ESP-32 to the Motor Driver and arduino and left it hanging in mid air.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{WhatsApp Image 2026-11-02 at 6.42.21 PM.jpeg}
+    \caption{Initial problem faced}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Observation:}
+\textbf{After completing the connection we observed that the ESP-32 wouldn't glow. Then we thought there there might be a loose connection (or) there might be some non working jumber wires. }
+
+\subsection{Workdone:}
+\textbf{Then we removed the whole set up shown in figure 2.Then we thought of giving direct connection to ESP-32 from arduino and Motor Driver on the breadboard, not using jumper wires in between. }
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[angle=90,width=0.85\linewidth]{WhatsApp Image 2026-11-02 at 7.53.56 PM.jpeg}
+    \caption{Assembling the ESP-32 and the motor driver on the breadboard}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone:}
+\textbf{We assembled the ESP-32 and the motor driver on the breadboard as shown in Figure 3. The red wire in the figure 3 is the wire connecting to the GND of the ESP-32. }
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{WhatsApp Image 2026-11-02 at 7.53.56 PM (1).jpeg}
+    \caption{Using Arduino and connecting it to the breadboard}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone:}
+\textbf{Then we connected the arduino to the breadboard. We are using the arduino as a voltage stabilizer. It receives the high voltage by the batteries as power input and gives as 5V output to the ESP-32 as power.}
+
+\subsection{Workdone:}
+\textbf{We powered the ESP-32 with arduino as shown in Figure 4.}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\linewidth]{WhatsApp Image 2026-11-02 at 7.53.56 PM (2).jpeg}
+    \caption{Complete connection of the circuit}
+    \label{fig:placeholder}
+\end{figure}
+
+\subsection{Workdone:}
+\textbf{After giving power from the arduino to ESP-32 and the Motor Driver. }
+
+\subsection{Observation:}
+\textbf{We observed that there is short circuit occuring when given power.It got short circuited when we gave direct connection between the batteries and ESP-32,Motor Driver. We observed that the led on the ESP-32 is glowing continously, Unlike when we gave it a direct connection.}
+
+
+
+
+\end{document}
